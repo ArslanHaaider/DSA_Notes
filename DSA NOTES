@@ -1,0 +1,86 @@
+IMPORTANT NOTES FOR DSA
+OOp Section:
+Define OOP in one line?
+Object-oriented programming (OOP) is a programming paradigm(pattern) that structures code based on the concept of objects, which encapsulate data and behavior, promoting modularity and code reusability.
+
+1) When it's asked to find something in sorted array  first try binary search approach (O(logn)
+Binary Search:
+
+    Worst-case time complexity: O(log n)
+    Average-case time complexity: O(log n)
+    Best-case time complexity: O(1)
+    Binary Search is a highly efficient search algorithm for sorted arrays. In the worst and average cases, it has a logarithmic time complexity (O(log n)), which means that it can quickly narrow down the search space and find the target element by repeatedly dividing the search interval in half. In the best case, when the element is found at the first attempt, it has a constant time complexity (O(1)).
+
+2) When asked to sort array in certain range use (Cyclic Sort) (O(n))
+
+	Cyclic Sort:
+
+	    Worst-case time complexity: O(n^2)
+	    Average-case time complexity: O(n^2)
+	    Best-case time complexity: O(n)
+	    Cyclic Sort is a sorting algorithm used specifically for sorting an array of numbers from 1 to n. In the best case, when the array is already sorted, it performs in linear time. However, in the 	worst and average cases, it has a quadratic time complexity due to multiple swaps and comparisons.
+
+3)     Bubble Sort:
+        Worst-case time complexity: O(n^2)
+        Average-case time complexity: O(n^2)
+        Best-case time complexity: O(n)
+        Bubble Sort is generally inefficient for large datasets because it involves many comparisons and swaps. In the worst and average cases, it has a quadratic time complexity.
+
+    Insertion Sort:
+        Worst-case time complexity: O(n^2)
+        Average-case time complexity: O(n^2)
+        Best-case time complexity: O(n)
+        Insertion Sort is more efficient than Bubble Sort in practice. In the best case, when the input is already nearly sorted, it performs in linear time. In the worst and average cases, it has a quadratic time complexity.
+
+    Selection Sort:
+        Worst-case time complexity: O(n^2)
+        Average-case time complexity: O(n^2)
+        Best-case time complexity: O(n^2)
+        Selection Sort involves a similar number of comparisons and swaps as Bubble Sort, resulting in a quadratic time complexity in all cases.
+        
+        
+4) (TO find duplicates and missing number in array)
+The approach of marking elements in this way is a common technique used in computer science and programming for solving problems related to missing or duplicate elements in arrays. It's often used in cases where you want to efficiently identify missing elements or duplicates without using extra memory.
+The goal of the marking step is to identify which numbers are present in the array and which are missing.
+
+    Start with the initial array: [4, 3, 2, 7, 8, 2, 1].
+
+    Go through the array one element at a time, and for each element, do the following:
+
+    a. Take the absolute value of the element. For example, if the element is -4, take its absolute value, which is 4.
+
+    b. Use the absolute value as an index to access a position in the array.
+
+    c. At that position, change the value to be negative.
+
+Here's how it works for the example array:
+
+    At index 0, the element is 4. So, we go to position 4 - 1 (index 3) and change the value to negative. The array becomes [4, 3, 2, -7, 8, 2, 1].
+
+    At index 1, the element is 3. So, we go to position 3 - 1 (index 2) and change the value to negative. The array becomes [4, 3, -2, -7, 8, 2, 1].
+
+    Continue this process for each element in the array.
+
+After this process, positive values in the array indicate which numbers are missing in the original array.
+
+5)A HashSet is a data structure in computer science and programming that represents an unordered collection of unique elements. It is part of the Java Collections Framework and is available in many other programming languages as well. The primary purpose of a HashSet is to store and manage a set of elements where each element is unique, meaning that no two elements in the HashSet can be equal.Can be used for removing multiple chararcters in string
+
+6)  (TYPES OF DATA STRUCTURE)
+	 Linear Data Structures:
+        Elements are arranged in a linear or sequential order.
+        Examples: arrays, lists, stacks, queues.
+        Suitable for ordered or sequential processing of elements.
+        Simple to implement and manage.
+
+    Non-Linear Data Structures:
+        Elements are organized in complex, non-sequential patterns.
+        Examples: trees, graphs.
+        Suitable for modeling relationships and connections between elements that are not necessarily sequential.
+        More complex to implement and may require specialized algorithms for traversal and manipulation.
+
+7)(Important point for time ComplexitY)
+ When we analyze time complexity, we look at the dominant factors that contribute to the running time. In your code, you have two loops, but it's essential to distinguish between two scenarios:
+
+    Nested Loops: Nested loops occur when one loop is inside another. In this case, if the inner loop iterates through 'n' elements and is executed for each iteration of the outer loop (which also iterates through 'n' elements), then you have a total of n * n = n^2 iterations. This results in a quadratic time complexity, O(n^2).
+
+    Two Separate Loops: In your code, you have two separate loops. The first loop iterates through 'n' elements, and the second loop also iterates through 'n' elements. However, the second loop doesn't iterate for each iteration of the first loop; it performs a single pass through the array. In this case, you don't have nested loops, and the time complexity remains linear, O(n).
