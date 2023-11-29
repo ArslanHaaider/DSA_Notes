@@ -1,0 +1,3 @@
+OOp Section:
+Define OOP in one line?
+Object-oriented programming (OOP) is a programming paradigm(pattern) that structures code based on the concept of objects, which encapsulate data and behavior, promoting modularity and code reusability.

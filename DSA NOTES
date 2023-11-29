@@ -1,8 +1,4 @@
 IMPORTANT NOTES FOR DSA
-OOp Section:
-Define OOP in one line?
-Object-oriented programming (OOP) is a programming paradigm(pattern) that structures code based on the concept of objects, which encapsulate data and behavior, promoting modularity and code reusability.
-
 1) When it's asked to find something in sorted array  first try binary search approach (O(logn)
 Binary Search:
 
